@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 window.addEventListener('DOMContentLoaded', function () {
   // конечная дата
-  const deadline = new Date(new Date().getFullYear(), new Date().getMonth() + 0, 26, 13, 26);
+  const deadline = new Date().getTime() + (1000*3600*0.5);
   // id таймера
   let timerId = null;
   // склонение числительных
@@ -147,9 +147,3 @@ window.addEventListener('DOMContentLoaded', function () {
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 });
-
-window.addEventListener('DOMContentLoaded', function () {
-  $('body').on('input', '.buy__input:nth-child(2)', function(){
-    this.value = this.value.replace(/[^0-9]/g, '');
-  });
-})

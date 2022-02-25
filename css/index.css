@@ -39,10 +39,17 @@ button {
   color: inherit;
   background-color: rgba(0, 0, 0, 0);
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 .container{
-  max-width: 100%;
-  margin-left: 7%;
-  margin-right: 7%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 .transition-20ms {
   -webkit-transition-duration: 20ms;
@@ -492,10 +499,9 @@ input::placeholder {color: rgb(167, 138, 8);}
 }
 .buy__input:nth-child(2):focus + .buy__clue:nth-child(3) {opacity: 1;}
 .buy__input:nth-child(4):focus + .buy__clue:nth-child(5) {opacity: 1;}
-@media (min-width:290px) and (max-width:399px) {
+@media (max-width:399px) {
   .container{
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 0 5px;
   }
   .section-hero .product {width: 48%;}
   .section-hero__quality {font-size: 13px;}
@@ -527,7 +533,7 @@ input::placeholder {color: rgb(167, 138, 8);}
   }
   .buy__form {padding-top: 20px;}
 }
-@media (min-width:290px) and (max-width:499px) {
+@media (max-width:499px) {
   .swiper-slide-inside {width: 97%;}
   .promo .flex:nth-child(1) {
     max-width: 100%;
@@ -540,7 +546,7 @@ input::placeholder {color: rgb(167, 138, 8);}
   .promo__text {max-width: 100%;}
 }
 
-@media (min-width:290px) and (max-width:599px) {
+@media (max-width:599px) {
   .ingredients .product {width: 45%;}
   .swiper-container_2 {display: inline-block;}
   .ingredients__all {
@@ -557,7 +563,7 @@ input::placeholder {color: rgb(167, 138, 8);}
   }
 }
 
-@media (min-width:290px) and (max-width:699px) {
+@media (max-width:699px) {
   .section-hero__qualities {display: none;}
   .section-hero__right {width: 50%;}
   .swiper-container_1 {display: inline-block;}
@@ -571,8 +577,7 @@ input::placeholder {color: rgb(167, 138, 8);}
 
 @media (min-width:400px) and (max-width:599px) {
   .container{
-    margin-left: 5.5%;
-    margin-right: 5.5%;
+    padding: 0 10px;
   }
   .section-hero .product {width: 48%;}
   .button-buy {font-size: 27px;}
@@ -606,8 +611,7 @@ input::placeholder {color: rgb(167, 138, 8);}
 }
 @media (min-width:600px) and (max-width:799px) {
   .container{
-    margin-left: 6%;
-    margin-right: 6%;
+    padding: 0 20px;
   }
   .ingredients__list {width: 25%;}
   .button-buy {
@@ -633,8 +637,7 @@ input::placeholder {color: rgb(167, 138, 8);}
 }
 @media (min-width:800px) and (max-width:999px) {
   .container{
-    margin-left: 6.5%;
-    margin-right: 6.5%;
+    padding: 0 30px;
   }
   .section-hero__quality {font-size: 18px;}
 }
